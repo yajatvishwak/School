@@ -2,12 +2,13 @@
 public class Frequency {
        
 	public static void main(String[] args) {
-	    String text = "Counntry road take me wooome";
+	    String text = "C o u n n t r y r o ad take me wooome";
+	    String textSplit[] = text.split(" ");
 	    for(int i = 0; i<text.length();i++){
 	    	  if(text.charAt(i) == ' '){
 	  	    	continue;
 	  	    }
-	    System.out.print(count(text,text.charAt(i),0)+ " ");
+	    System.out.print(count(text,text.charAt(i),0)+ "--------> ");
 	    System.out.print(text.charAt(i));
 	    System.out.println();
 	  
