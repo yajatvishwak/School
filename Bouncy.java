@@ -45,9 +45,9 @@ public class Bouncy {
 	     
 	    void isBouncy(int n)
 	    {
-	        if(isI(n)==true)
+	        if(isI(n))
 	            System.out.println(  n + "  Not Bouncy");
-	        else if(isD(n)==true)
+	        else if(isD(n))
 	            System.out.println(  n + "  Not Bouncy");
 	        else
 	            System.out.println(  n + " is bouncy");
