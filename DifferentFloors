@@ -1,0 +1,74 @@
+import java.util.Scanner;
+public class DifferentFloors{
+
+    public static void main(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter names");
+        String names[] = new String[5];
+        for(int i = 0; i <=4; i++){
+            names[i] = sc.nextLine();
+        }
+
+               per1 = {0,0,0,0,0};
+               per2 = {0,0,0,0,0};
+               per3 = {0,0,0,0,0};
+               per4 = {0,0,0,0,0};
+               per5 = {0,0,0,0,0};
+               
+        String que[] = new String[6];
+        for(int i = 0; i <=5; i++){
+           que[i] = sc.nextLine();
+        }
+        
+        //strip
+        for(int i = 0; i <=5 ; i++){
+        String q = que[i];
+        String temp[] = q.split(" ");
+        boolean flg = false;
+        String usednames = "";
+        String  selfloor = "";
+        
+        for(int k = 0; k< temp.length ; k++){
+            if(String.isDigit(temp[i])){
+                selfloors = temp[i]+" "; 
+                continue;
+             }
+            
+            
+            for(int m = 0 ; m < names.length ; m++){
+             if(temp[i].equalsIgnoreCase(names[m])){
+                flg = true;
+                usednames = temp[i] + " ";
+                 continue;
+                }
+            }
+            if (flg){
+            flg = false;
+            continue;
+            }
+          
+           learn = learn + temp[i];
+     
+        }
+         
+           String usednamearr = usedname.split(" ");
+        if(learn.equals("NOTONFLOOR")){
+            
+        }else if(learn.trim().equals("NOTONFLOORSOR")){
+        
+        }else if(learn.trim().equals("ONHIGHERFLOORTHAN")){
+        
+        }else if(learn.trim().equals("ONADJACENTFLOORTO")){
+        
+        }else if(learn.trim().equals("NOTONADJACENTFLOORTO")){
+        }
+        else{
+        System.out.println("Please follow the rules");
+        }
+        
+        
+
+    }
+
+}
+}
